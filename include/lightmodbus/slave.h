@@ -180,7 +180,7 @@ typedef struct modbusSlave
 		#endif
 
 		//! Frame length in bytes
-		uint8_t length;
+		uint16_t length;
 	} response;
 
 	/**
@@ -203,7 +203,7 @@ typedef struct modbusSlave
 		#endif
 
 		//! Frame length in bytes
-		uint8_t length;
+		uint16_t length;
 	} request;
 
 } ModbusSlave;

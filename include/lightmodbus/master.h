@@ -93,7 +93,7 @@ typedef struct modbusMaster
 		#endif
 
 		//! Length of the request frame in bytes
-		uint8_t length;
+		uint16_t length;
 	} request;
 
 	/**
@@ -116,7 +116,7 @@ typedef struct modbusMaster
 		#endif
 
 		//! Length of the response frame in bytes
-		uint8_t length;
+		uint16_t length;
 	} response;
 
 	/**
@@ -130,7 +130,7 @@ typedef struct modbusMaster
 		uint8_t address; //!< Addres of slave that sent in the data
 		uint16_t index; //!< Modbus address of the first register/coil
 		uint16_t count; //!< Number of data units (coils, registers, etc.)
-		uint8_t length; //!< Length of data in bytes
+		uint16_t length; //!< Length of data in bytes
 		ModbusDataType type; //!< Type of data
 		uint8_t function; //!< Function that accessed the data
 
